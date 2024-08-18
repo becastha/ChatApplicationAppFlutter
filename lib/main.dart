@@ -1,25 +1,22 @@
 import 'package:flutter/material.dart';
 
-///Defiing the main class 
- void main() => runApp(ChatApp());
-
-class ChatApp extends StatelessWidget {
-  const ChatApp({super.key});
+void main() => runApp(const LogoApp());
+class LogoApp extends StatefulWidget {
+  const LogoApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return   MaterialApp(
-      debugShowCheckedModeBanner:  false,
-      title : 'ChatApp',
+  State<LogoApp> createState() => _LogoAppState();
+}
 
-      ///formatting theme
-      theme:ThemeData(
-        textTheme: const TextTheme(
-          bodyLarge: TextStyle(
-            fontFamily: 'Poppins',
-          ),
-        ),
-    
+class _LogoAppState extends State<LogoApp> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        margin: const EdgeInsets.symmetric(vertical: 20),
+        height: 300,
+        width: 300,
+        child:const Icon(Icons.face),
       ),
     );
   }
