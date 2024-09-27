@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(const LogoApp());
+
 class LogoApp extends StatefulWidget {
   const LogoApp({super.key});
 
@@ -16,7 +17,7 @@ class _LogoAppState extends State<LogoApp> {
         margin: const EdgeInsets.symmetric(vertical: 20),
         height: 300,
         width: 300,
-        child:const Icon(Icons.face),
+        child: const Icon(Icons.face),
       ),
     );
   }
